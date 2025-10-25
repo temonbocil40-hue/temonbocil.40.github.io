@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday My Love ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleeee.css">
+  <style>
+    :root{--bg1:#c6329e;--bg2:#860864;--gold:#d4af37;--glass:rgba(255,255,255,0.06)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#fff;overflow-x:hidden;overflow-y:auto}
+
+    header{position:fixed;top:0;left:0;width:100%;backdrop-filter:blur(12px);background:rgba(15,23,42,0.65);display:flex;justify-content:center;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.4)}
+    nav{display:flex;gap:28px;padding:14px 0}
+    nav a{color:#d62a8e;text-decoration:none;font-weight:600;position:relative}
+    nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width 0.3s}
+    nav a:hover::after,nav a.active::after{width:100%}
+
+    section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 30px;text-align:center;flex-direction:column;opacity:0;transform:translateY(20px);transition:opacity 0.8s,transform 0.8s}
+    section.visible{opacity:1;transform:none}
+
+    h1{font-family:'Playfair Display',serif;font-size:48px;margin-bottom:12px}
+    h2{font-family:'Playfair Display',serif;font-size:36px;color:var(--gold)}
+    p{max-width:700px;line-height:1.6;font-size:18px}
+
+    .btn{appearance:none;border:0;padding:12px 20px;margin-top:18px;border-radius:12px;font-weight:600;cursor:pointer;background:linear-gradient(90deg,var(--gold),#f7e1a0);color:#111}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+    .gallery img{width:100%;border-radius:16px;object-fit:cover;height:220px;box-shadow:0 6px 20px rgba(0,0,0,0.5)}
+
+    .letter{max-width:680px;background:rgba(53, 6, 240, 0.05);border-radius:16px;padding:24px;border:1px solid rgba(255,255,255,0.1);text-align:left;line-height:1.8;box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+
+    footer{padding:30px 0;text-align:center;opacity:0.6}
+
+    #confetti{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:10}
+    #hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:9}
+
+    .heart{position:absolute;width:20px;height:20px;background:transparent;animation:floatHeart 5s linear infinite;}
+    .heart::before,.heart::after{content:'';position:absolute;width:12px;height:18px;background:linear-gradient(180deg,#ff6b95,#ff3b7a);border-radius:12px 12px 0 0;transform-origin:bottom center}
+    .heart::before{left:4px;transform:rotate(-45deg)}
+    .heart::after{left:10px;transform:rotate(45deg)}
+
+    @keyframes floatHeart{
+      0%{transform:translateY(100vh) scale(0.6) rotate(0deg);opacity:0}
+      20%{opacity:1}
+      100%{transform:translateY(-10vh) scale(1.2) rotate(360deg);opacity:0}
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <a href="#home" class="active">Ucapan Manis</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#letter">Surat Cinta</a>
+      <a href="#music">Putar Musik</a>
+      <a href="#surprise">Kejutan Akhir</a>
+    </nav>
+  </header>
+
+  <canvas id="confetti"></canvas>
+  <div id="hearts"></div>
+
+  <section id="home" class="visible">
+    <h1>Selamat Ulang Tahun, Sayang ❤️</h1>
+    <p>Tania Safitri.</p>
+    <button class="btn" onclick="showSection('gallery')">Lihat Kenangan Kita 📸</button>
+  </section>
+
+  <section id="gallery">
+  <h2>Galeri</h2>
+  <div class="gallery">
+    <img src="c:\Users\rifia\Downloads\11.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\12.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\13.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\14.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\300.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\16.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\17.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\18.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\19.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\20.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\200.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\201.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\100.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\101.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\102.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\103.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\104.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\105.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\106.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\107.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\108.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\109.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\110.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\400.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\111.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\112.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\113.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\114.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\115.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\116.jpg" alt="Moment">
+    <img src="c:\Users\rifia\Downloads\117.jpg" alt="Moment">
+     <img src="c:\Users\rifia\Downloads\118.jpg" alt="Moment">
+      <img src="c:\Users\rifia\Downloads\119.jpg" alt="Moment">
+       <img src="c:\Users\rifia\Downloads\120.jpg" alt="Moment">
+  </div>
+</section>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap; /* agar gambar pindah baris jika layar sempit */
+    gap: 10px; /* jarak antar gambar */
+    justify-content: center; /* posisikan di tengah */
+  }
+
+  .gallery img {
+    width: 150px; /* ukuran lebar gambar */
+    height: auto; /* biar proporsional */
+    border-radius: 8px; /* sudut membulat opsional */
+  }
+</style>
+
+  <section id="letter">
+    <h2>Surat Cinta Untukmu 💌</h2>
+    <div class="letter">
+      <p>Selamat ulang tahun, sayangku 💐</p>
+      <p>
+        Dua tahun hampir kita lewati, dan setiap detiknya selalu terasa istimewa karena ada kamu di dalamnya.
+        Kamu bukan cuma seseorang yang aku cintai, tapi juga alasan kenapa aku selalu ingin jadi versi terbaik dari diriku.
+        Terima kasih udah hadir dengan segala lucu, manja, dan hangatnya kamu — semuanya selalu berhasil bikin aku jatuh cinta lagi dan lagi.
+      </p>
+      <p>
+        Di hari spesialmu ini, aku cuma mau bilang: semoga semua hal baik selalu datang ke kamu, semoga langkahmu selalu ringan,
+        dan semoga aku selalu punya kesempatan untuk ada di setiap harimu.
+      </p>
+      <p>Aku sayang kamu, hari ini, besok, dan seterusnya 🤍.</p>
+      <p><strong>Tania Safitri 💖💖💖</strong></p>
+    </div>
+  </section>
+
+  <!-- Bagian Musik -->
+  <section id="music">
+    <h2>Lagu Untukmu 🎵</h2>
+    <audio id="bgmusic" autoplay loop>
+      <source src="c:\Users\rifia\Music\audio.mp3.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+    <p>Putar musik ini sambil membaca surat cintaku untukmu 💖</p>
+  </section>
+
+  <section id="surprise">
+    <h2>Kejutan Akhir 🎉</h2>
+    <body mpa-version="9.0.21" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg"> 
+  <div id="ui"> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+       I Love You
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="love"> 
+    <div class="love_horizontal"> 
+     <div class="love_vertical"> 
+      <div class="love_word">
+     </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+</body>
+
+
+    <p>Terima kasih telah menjadi bagian paling indah dalam hidupku. Klik tombol di bawah ini untuk melihat kejutan spesial!</p>
+    <button class="btn" onclick="showSurprise()">Tampilkan Kejutan ✨</button>
+  </section>
+
+  <footer>
+    Tania Safitri❤️
+  </footer>
+
+  <script>
+    // Buat musik langsung play saat load / interaksi pertama
+    const music = document.getElementById("bgmusic");
+    window.addEventListener("load", () => {
+      const playPromise = music.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          document.body.addEventListener("click", () => music.play(), { once: true });
+          
+        });
+      }
+    });
+
+    // Efek Love & Confetti
+    function createLove() {
+      const love = document.createElement('div');
+      love.classList.add('love');
+      love.innerHTML = '💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖';
+      love.style.left = Math.random() * 200 + 'vw';
+      love.style.fontSize = Math.random() * 20 + 10 + 'px';
+      love.style.animationDuration = Math.random() * 3 + 2 + 's';
+      document.body.appendChild(love);
+      setTimeout(() => love.remove(), 5000);
+      
+    }
+    setInterval(createLove, 200);
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    function showSection(id){
+      sections.forEach(sec=>sec.classList.remove('visible'));
+      document.getElementById(id).classList.add('visible');
+      navLinks.forEach(a=>a.classList.remove('active'));
+      document.querySelector(`nav a[href='#${id}']`).classList.add('active');
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    navLinks.forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').replace('#','');
+        showSection(id);
+      });
+    });
+
+    const canvas=document.getElementById('confetti');
+    const ctx=canvas.getContext('2d');
+    let W=canvas.width=innerWidth,H=canvas.height=innerHeight;
+    window.addEventListener('resize',()=>{W=canvas.width=innerWidth;H=canvas.height=innerHeight});
+    let confetti=[];
+    function rand(min,max){return Math.random()*(max-min)+min;}
+    function startConfetti(){
+      for(let i=0;i<200;i++){
+        confetti.push({x:rand(0,W),y:rand(-H,0),r:rand(4,10),d:rand(0.5,1.5),color:`hsl(${rand(20,60)},80%,60%)`});
+      }
+      animateConfetti();
+    }
+    function animateConfetti(){
+      ctx.clearRect(0,0,W,H);
+      confetti.forEach((p,i)=>{
+        ctx.fillStyle=p.color;
+        ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+        p.y+=p.d*3; p.x+=Math.sin(p.y/40)*2;
+        if(p.y>H){confetti.splice(i,1);}
+      });
+      if(confetti.length>0) requestAnimationFrame(animateConfetti);
+      
+    }
+
+    const heartsContainer = document.getElementById('hearts');
+    function createHeart(){
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 4 + Math.random() * 3 + 's';
+      heartsContainer.appendChild(heart);
+      setTimeout(()=>heart.remove(),7000);
+    }
+    setInterval(createHeart,400);
+
+    function showSurprise(){
+      startConfetti();
+      for(let i=0;i<20;i++) createHeart();
+      
+    }
+  </script>
+</body>
+</html>
